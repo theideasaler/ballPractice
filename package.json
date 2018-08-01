@@ -1,0 +1,27 @@
+{
+  "name": "ballpractice",
+  "version": "1.0.0",
+  "description": "this is the first project for practicing html5 animation based Chris courses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theideasaler/ballPractice.git"
+  },
+  "keywords": [
+    "html5",
+    "animation"
+  ],
+  "author": "Neo Lau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theideasaler/ballPractice/issues"
+  },
+  "homepage": "https://github.com/theideasaler/ballPractice#readme",
+  "devDependencies": {
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0"
+  }
+}
