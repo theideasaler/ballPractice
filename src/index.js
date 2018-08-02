@@ -6,6 +6,6 @@ class car {
     };
 }
 
-const t = new car();
+const tt = new car();
 
-t.test();
+tt.test();

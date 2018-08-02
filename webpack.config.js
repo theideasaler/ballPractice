@@ -1,5 +1,8 @@
 const webpack = require('webpack');
 const path = require('path');
+const miniCssExtractPlugin = require('mini-css-extract-plugin');
+const optimizeCssAssetPlugin = require('optimize-css-assets-webpack-plugin');
+// const UglifyJsPlugin = require('uglify')
 
 module.exports = {
     entry: './src/index.js',
@@ -7,6 +10,18 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
+    optimization:{// this will overwrite the webpack minimizer, so the default js minimizer will be overwrited
+        minimizer:[
+            new optimizeCssAssetPlugin({})
+        ]
+    },
+    plugins:[//create and initialise the plugin here
+        new miniCssExtractPlugin({
+            filename: 'index.css',
+            chunkFilename: '[id].css',
+            
+        })
+    ],
     module: {
         rules: [
             {
@@ -23,7 +38,7 @@ module.exports = {
                 test: /\.scss$/,
                 exclude: /node_modules/,
                 use: [
-                    'style-loader',
+                    miniCssExtractPlugin.loader,
                     'css-loader',
                     'sass-loader'
                 ]
