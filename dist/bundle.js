@@ -105,7 +105,7 @@ var car = function () {
     _createClass(car, [{
         key: "test",
         value: function test() {
-            document.write("this is just ad test");
+            document.write("Hello world!");
         }
     }]);
 

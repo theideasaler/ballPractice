@@ -44,6 +44,13 @@ module.exports = {
                 ]
             }
         ]
+    },
+    devServer: {
+        contentBase: path.resolve(__dirname, "dist"),
+        historyApiFallback: true,
+        open: true,
+        port: 10020,
+        hot: true
     }
 };
 
