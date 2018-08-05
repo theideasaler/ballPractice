@@ -17,7 +17,17 @@ c.fillRect(300, 400, 100, 100);
 
 c.beginPath();
 c.moveTo(200, 300);
-c.lineTo(300, 340);
-c.lineTo(400, 700);
 c.strokeStyle = "#fa34a3";
 c.stroke();
+
+c.beginPath();
+c.arc(300, 300, 30, 0, Math.PI * 2, false);
+c.strokeStyle = "blue";
+c.stroke();
+
+for (let i = 0 ; i < 3 ; i++) {
+    c.beginPath();
+    c.arc(300, 300, 30, 0, Math.PI * 2, false);
+    c.strokeStyle = "blue";
+    c.stroke();
+}
