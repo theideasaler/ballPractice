@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
 const optimizeCssAssetPlugin = require('optimize-css-assets-webpack-plugin');
-// const UglifyJsPlugin = require('uglify')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -12,7 +12,10 @@ module.exports = {
     },
     optimization:{// this will overwrite the webpack minimizer, so the default js minimizer will be overwrited
         minimizer:[
-            new optimizeCssAssetPlugin({})
+            new UglifyJsPlugin({
+                parallel: true,
+            }),
+            new optimizeCssAssetPlugin({}) 
         ]
     },
     plugins:[//create and initialise the plugin here
