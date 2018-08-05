@@ -1,6 +1,6 @@
 #ignore the whole node_modules folder
 /node_modules/
-#ignore the bundle.js
-/dist/bundle.js/
 #ignore the final css file
-/dist/index.css/
+dist/index.css
+#ignore the bundle.js
+dist/bundle.js

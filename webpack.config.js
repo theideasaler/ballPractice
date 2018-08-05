@@ -3,6 +3,7 @@ const path = require('path');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
 const optimizeCssAssetPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const AutoPrefixerCss = require('autoprefixer');
 
 module.exports = {
     entry: './src/index.js',
@@ -43,7 +44,8 @@ module.exports = {
                 use: [
                     miniCssExtractPlugin.loader,
                     'css-loader',
-                    'sass-loader'
+                    'sass-loader',
+                    'postcss-loader'
                 ]
             }
         ]

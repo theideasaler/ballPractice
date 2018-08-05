@@ -2,7 +2,7 @@ import './index.scss';
 
 class car {
     test () {
-        document.write("Hello world!");
+        document.write("Hello worlds!");
     };
 }
 
