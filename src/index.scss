@@ -5,6 +5,11 @@ html {
 }
 
 body {
-    background-color: $bgColor;
     font-size: 4rem;
+    margin: 0;
+    canvas {
+        border: 1px solid black;
+        height: 100%;
+        width: 100%;
+    }
 }
