@@ -59,7 +59,7 @@ let colorArray = [
 let circleNum = 800;
 let maxRadius = 50;
 let hoverArea = 70;
-let basicVelocity = 3;
+let basicVelocity = 4;
 
 window.addEventListener('mousemove', event => {
     mouse.x = event.x;
