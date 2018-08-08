@@ -57,7 +57,7 @@ let colorArray = [
     '#F26144'
 ];
 let circleNum = 800;
-let maxRadius = 50;
+let maxRadius = 60;
 let hoverArea = 70;
 let basicVelocity = 4;
 
